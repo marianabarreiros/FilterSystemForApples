@@ -22,7 +22,10 @@ public class FilterSystemForApples {
         SelectionCriteria selectionCriteria = new SelectionCriteria();
         
         List<Apple> inventory = Arrays.asList(apple1, apple2, apple3, apple4, apple5, apple6, apple7);
-        System.out.println(selectionCriteria.filterApples(inventory));
+        System.out.println(selectionCriteria.filterGreenApples(inventory));
+        System.out.println(selectionCriteria.filterRedApples(inventory));
+        System.out.println(selectionCriteria.filterAppleByWeight(inventory));
+        System.out.println(selectionCriteria.filterApples(inventory, "red", 150));
     }
     
 }
